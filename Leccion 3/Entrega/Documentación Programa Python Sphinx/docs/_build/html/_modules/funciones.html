@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funciones &#8212; Entrega Leccion 3 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Entrega Leccion 3 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">funciones</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for funciones</h1><div class="highlight"><pre>
+<span></span><span class="c1">#Entrega Leaccion2 Marcos Santana</span>
+<span class="c1">#Archivo funciones</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span>
+
+<span class="sd">&quot;&quot;&quot;Este es el archivo .py que vamos a utilizar para documentarlo&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="add"><a class="viewcode-back" href="../funciones.html#funciones.add">[docs]</a><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Add Function.</span>
+<span class="sd">    </span>
+<span class="sd">    Esta funcion suma los dos argumentos que se le dan.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters:</span>
+<span class="sd">        x (float): un numero real</span>
+<span class="sd">        y (float): un numero real</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float:Returning value&quot;&quot;&quot;</span>
+    
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span></div>
+
+
+<div class="viewcode-block" id="substract"><a class="viewcode-back" href="../funciones.html#funciones.substract">[docs]</a><span class="k">def</span> <span class="nf">substract</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Substract Function.</span>
+<span class="sd">    </span>
+<span class="sd">    Esta funcion resta los dos argumentos que se le dan.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters:</span>
+<span class="sd">        x (float): un numero real</span>
+<span class="sd">        y (float): un numero real</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float:Returning value&quot;&quot;&quot;</span>
+    
+    <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span></div>
+
+<div class="viewcode-block" id="multiply"><a class="viewcode-back" href="../funciones.html#funciones.multiply">[docs]</a><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Substract Function</span>
+<span class="sd">    </span>
+<span class="sd">    Esta funcion multiplica los dos argumentos que se le dan.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters:</span>
+<span class="sd">        x (float): un numero real</span>
+<span class="sd">        y (float): un numero real</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float:Returning value&quot;&quot;&quot;</span>
+    
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span></div>
+
+<div class="viewcode-block" id="divide"><a class="viewcode-back" href="../funciones.html#funciones.divide">[docs]</a><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Divide Function</span>
+<span class="sd">    </span>
+<span class="sd">    Esta funcion divide los dos argumentos que se le dan.</span>
+
+<span class="sd">    Lanza un error si se intenta dividir por 0.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters:</span>
+<span class="sd">        x (float): un numero real</span>
+<span class="sd">        y (float): un numero real</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float:Returning value&quot;&quot;&quot;</span>
+    
+    <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span></div>
+
+<div class="viewcode-block" id="logarithm"><a class="viewcode-back" href="../funciones.html#funciones.logarithm">[docs]</a><span class="k">def</span> <span class="nf">logarithm</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Logarithm Function</span>
+<span class="sd">    </span>
+<span class="sd">    Esta funcion calcula el logaritmo neperiano del argumento que le dan.</span>
+
+<span class="sd">    Lanza un error en caso de que el valor de entrada no sea mayor que 0.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters:</span>
+<span class="sd">        x (float): un numero real</span>
+<span class="sd">        y (float): un numero real</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float:Returning value&quot;&quot;&quot;</span>
+    
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot calculate the log by number &lt;=0&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></div>
+
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Entrega Leccion 3 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">funciones</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, Marcos Santana.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
+    </div>
+  </body>
+</html>
